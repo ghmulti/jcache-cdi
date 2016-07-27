@@ -62,13 +62,31 @@
         <enabled>true</enabled>
       </releases>
     </repository>
+      <repository>
+          <id>jitpack.io</id>
+          <url>https://jitpack.io</url>
+      </repository>
   </repositories>
 
   <dependencies>
     <dependency>
-      <groupId>org.jsr107.ri</groupId>
-      <artifactId>cache-annotations-ri-cdi</artifactId>
-      <version>1.0.0</version>
+        <groupId>com.github.ghmulti</groupId>
+        <artifactId>RI</artifactId>
+        <version>1.0.0-cdi-gf41</version>
+        <exclusions>
+            <exclusion>
+                <artifactId>cache-ri-impl</artifactId>
+                <groupId>com.github.ghmulti.RI</groupId>
+            </exclusion>
+            <exclusion>
+                <artifactId>cache-annotations-ri-guice</artifactId>
+                <groupId>com.github.ghmulti.RI</groupId>
+            </exclusion>
+            <exclusion>
+                <artifactId>cache-annotations-ri-spring</artifactId>
+                <groupId>com.github.ghmulti.RI</groupId>
+            </exclusion>
+        </exclusions>
     </dependency>
     <dependency>
       <groupId>junit</groupId>
