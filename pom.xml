@@ -72,7 +72,7 @@
     <dependency>
         <groupId>com.github.ghmulti</groupId>
         <artifactId>RI</artifactId>
-        <version>1.0.0-cdi-gf41</version>
+        <version>1.0.0-ear</version>
         <exclusions>
             <exclusion>
                 <artifactId>cache-ri-impl</artifactId>
